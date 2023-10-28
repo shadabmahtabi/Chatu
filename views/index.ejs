@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatsUp | An interesting chating platform </title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <div id="main">
+    <nav class="nav">
+      <div class="logo"><img src="/images/chatu.png" alt=""> ChatsUp | <span>Let's chat</span></div>
+      <a href="#"><h4><ion-icon name="person-outline"></ion-icon> <span id="username"></span></h4></a>
+    </nav>
+    <div class="mainBody">
+      <div class="onlineBox">
+        <div class="peoples">
+          <h3>Online Users <ion-icon name="chevron-down-outline" id="arrow"></ion-icon></h3>
+          <div class="onlineNum"></div>
+        </div>
+        <div class="userBox">
+          <ul id="usernameList">
+            <!-- <li class="user"><a href="#"><h3>Shadab Alam</h3></a></li> -->
+            <!-- <li class="user"><a href="#"><h3>Sakshi Sahu</h3></a></li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="chatBox">
+        <div class="messageArea"></div>
+        <div class="inputArea">
+          <textarea id="textarea" placeholder="Write your messages...."></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js" integrity="sha512-xbQU0+iHqhVt7VIXi6vBJKPh3IQBF5B84sSHdjKiSccyX/1ZI7Vnkt2/8y8uruj63/DVmCxfUNohPNruthTEQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/javascripts/script.js"></script>
+</body>
+</html>
